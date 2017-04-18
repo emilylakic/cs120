@@ -1,0 +1,18 @@
+1. How big are integers on the Linux box?
+32 bits
+
+2. Which direction does the stack run? 
+Up
+
+3. What is the first assembly instruction in main?
+The first assembly instruction in main is pushq. 
+
+4. What is the equivalent of the JR instruction?
+ret.
+
+5. What is the first assembly instruction in every function, and what do you think it’s doing?
+The first assembly instruction in every function is .cfi_startproc. It initializes some internal data structures.
+
+6. What is the last assembly instruction in every function (including main) and what do you think it is doing?
+The last assembly instruction in every function is .cfi_endproc. It closes the function.
+
