@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="Predict Taken">
+			<x>120.0</x>
+			<y>59.0</y>
+		</state>
+		<state id="1" name="Predict Taken">
+			<x>297.0</x>
+			<y>59.0</y>
+		</state>
+		<state id="2" name="Predict Taken">
+			<x>452.0</x>
+			<y>56.0</y>
+		</state>
+		<state id="3" name="Predict Not Taken">
+			<x>111.0</x>
+			<y>192.0</y>
+		</state>
+		<state id="4" name="Predict Not Taken">
+			<x>289.0</x>
+			<y>187.0</y>
+		</state>
+		<state id="5" name="Predict Not Taken">
+			<x>454.0</x>
+			<y>186.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read>T</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>0</to>
+			<read>T</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>3</to>
+			<read>NT</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>T</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>T</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>NT</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>NT</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>T</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>3</to>
+			<read>NT</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>NT</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>NT</read>
+		</transition>
+	</automaton>
+</structure>
